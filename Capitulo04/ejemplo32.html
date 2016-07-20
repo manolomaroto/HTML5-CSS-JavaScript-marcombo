@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>dataset</title>
+        <meta charset="utf-8">
+        <script>
+            function iniciar(){
+                var elem = document.getElementById('principal');
+                alert(elem.dataset.total);
+            }
+            addEventListener('load',iniciar);
+        </script>
+    </head>
+    <body>
+        <h3>Usamos la porpiedad dataset para manejar atributos del tipo data-*</h3>
+        <section id="principal" data-total="3">Mi contenido</section>
+    </body>
+</html>
