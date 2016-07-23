@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>formulario</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/ejemplo03.css">
+    </head>
+    <body>
+        <h3>El formulario incluye un text area y eso</h3>
+        <section id="formulario">
+            <form action="procesar.php" method="get" name="miformulario">
+                <label for="mitexto">Area de texto: </label>
+                <br><textarea name="mitexto" id="mitexto" cols="30" rows="5"></textarea>
+                <br><label for="milista">Seleccionar: </label>
+                <select name="milista" id="milista">
+                    <option value="1">uno</option>
+                    <option value="2">dos</option>
+                    <option value="3">tres</option>
+                </select>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Reiniciar">
+            </form>
+        </section>
+    </body>
+</html>

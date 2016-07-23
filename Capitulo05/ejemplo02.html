@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>tipos de input</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/ejemplo02.css">
+    </head>
+    <body>
+        <h3>Creamos un formulario con los tipos de input</h3>
+        <section>
+            <form action="procesar.php" name="miformulario" method="GET">
+                <br><label for="minombre">Texto:</label>
+                <input type="text" name="minombre" id="minombre">
+                <br><label for="miopcion">Botones de selección</label>
+                <input type="radio" name="miopcion" value="1" checked>
+                <input type="radio" name="miopcion" value="2">
+                <input type="radio" name="miopcion" value="3">
+                <br><label for="miclave">Contraseña:</label>
+                <input type="password" name="miclave" id="miclave">
+                <input type="checkbox" name="micasilla" id="micasilla" value="123">
+                <input type="hidden" value="clave secreta">
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </body>
+</html>
