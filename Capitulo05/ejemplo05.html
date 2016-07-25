@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>Atributos</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/ejemplo05.css">
+    </head>
+    <body>
+        <h3>Probamos atributos</h3>
+        <form action="procesar.php" name="atributos" method="GET">
+            <fieldset>
+                <legend>autocomplete</legend>
+                <span>Por defecto esta activado, da opción a elegir entre opciones ya introducidas antes</span>
+                <label for="completado">Autocompletado desactivado</label>
+                <input type="text" name="completado" id="completado" autocomplete="off">
+            </fieldset>
+            <fieldset>
+                <legend>novalidate formnovalidate</legend>
+                <label for="validate">No validar</label>
+                <input type="submit" name="novalidar" id="novalidar" value="Enviar sin validar">
+            </fieldset>
+            <fieldset>
+                <legend>placeholder</legend>
+                <label for="buscar">Buscar</label>
+                <input type="search" name="buscar" id="buscar" placeholder="Buscar" autocomplete="off">
+            </fieldset>
+            <fieldset>
+                <legend>required</legend>
+                <label for="requerido">Requerido email</label>
+                <input type="email" name="requerido" id="requerido" required>
+            </fieldset>
+            <fieldset>
+                <legend>multiple, habilita introducir varios valores separados por comas</legend>
+                <label for="multiple">Puedes escribir varios email separados por comas</label>
+                <input type="email" name="multiple" id="multiple" multiple>
+            </fieldset>
+            <fieldset>
+                <legend>autofocus</legend>
+                <label for="foco">Centramos el foco</label>
+                <input type="text" name="foco" id="foco" autofocus>
+            </fieldset>
+            <fieldset>
+                <legend>pattern, permite introducir una patrón de validación específico</legend>
+                <label for="codigo">codigo postal</label>
+                <input type="text" pattern="[0-9]{5}" name="codigo" id="codigo" title="Introduce codigo postal">
+            </fieldset>
+
+
+            <input type="submit" value="Enviar validando">
+            <input type="reset">
+        </form>
+    </body>
+</html>
