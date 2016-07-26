@@ -1,3 +1,3 @@
 <?php
-    print('Su nombre es: '.$_GET['minombre']."<br>".$_GET['mitexto']);
+    print('Su nombre es: '.$_GET['nombre']."<br>".$_GET['mitexto']);
 ?>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>invalid/checkValidity()</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/ejemplo11.css">
+        <script src="js/ejemplo11.js"></script>
+    </head>
+    <body>
+        <h3>Creamos ahora un formulario y controlamos la validación</h3>
+        <section>
+            <form action="procesar.php" method="GET" name="miformulario">
+                <label for="apodo">Apodo:</label>
+                <input pattern="[A-Za-z]{3,}" name="apodo" id="apodo" maxlength="10" required><br>
+                <label for="miemail">Email:</label>
+                <input type="email" name="miemail" id="miemail" required>
+                <br>
+                <input type="button" id="enviar" value="Registrarse">
+            </form>
+        </section>
+    </body>
+</html>
