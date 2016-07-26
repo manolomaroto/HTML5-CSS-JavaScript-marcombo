@@ -1,0 +1,6 @@
+input:valid{
+    background-color: #aaf;
+}
+input:invalid{
+    background-color: #faa;
+}
