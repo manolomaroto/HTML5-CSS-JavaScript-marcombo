@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>nuevos elementos del formulario</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css.ejemplo06.css">
+    </head>
+    <body>
+        <h3>Nuevos elementos</h3>
+        <ul>
+            <li>datalist
+                <ul>
+                    <li>Construye una lista de items que luego referenciamos con el atributo list al id del datalist</li>
+                </ul>
+            </li>
+            <li>
+                progress
+                <ul>
+                    <li>
+                        indica el progreso, tiene dos valores, donde emepiez y donde termina.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                meter
+                <ul>
+                    <li>
+                        Parecido al anterior aunque muestra una escala no un proceso
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <form action="procesar.php" name="miformulario" method="GET">
+            <datalist id="misdatos">
+                <option value="123123123" label="celular 1"></option>
+                <option value="321321321" label="celular 2"></option>
+            </datalist>
+            <fieldset>
+                <legend>datalist</legend>
+                <label for="telefono">Telefono</label>
+                <input type="text" name="telefono" id="telefono" list="misdatos">
+            </fieldset>
+            <fieldset>
+                <legend>progress</legend>
+                <progress value="10" max="100">10%</progress>
+            </fieldset>
+            <fieldset>
+                <legend>meter</legend>
+                <meter min="0" max="100" value="60" low="40" high="80" optimum="100">60</meter>
+            </fieldset>
+        </form>
+    </body>
+</html>
