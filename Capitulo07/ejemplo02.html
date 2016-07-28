@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>Leyendo pistas</title>
+        <meta charset="utf-8">
+        <script src="js/ejemplo02.js"></script>
+    </head>
+    <body>
+        <h3>Ahora accedemos a las propiedades de track</h3>
+        <section>
+            <video id="reproductor" width="720" height="400" controls>
+                <source src="../Capitulo06/video/trailer.mp4">
+                <source src="../Capitulo06/video/trailer.ogg">
+                <track id="mipista" label="English Subtitles" src="../Capitulo06/video/subtitles.vtt" srclang="en" default></track>
+            </video>
+
+        </section>
+        <aside id="info"></aside>
+    </body>
+</html>
