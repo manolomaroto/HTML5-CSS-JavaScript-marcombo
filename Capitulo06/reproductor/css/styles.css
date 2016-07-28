@@ -40,7 +40,7 @@ hgroup {
 }
 #barra {
   float: left;
-  width: 400px;
+  width: 380px;
   height: 16px;
   padding: 2px;
   margin: 2px 5px;
@@ -54,4 +54,7 @@ hgroup {
 }
 .clear {
   clear: both;
+}
+#volumen {
+  margin: 0px;
 }
