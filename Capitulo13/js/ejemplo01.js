@@ -4,6 +4,8 @@ function iniciar(){
     fuente1.addEventListener('dragstart', arrastrado);
 
     soltar = document.getElementById('cajaObjetivo');
+    //Los dos siguientes eventos a los que se les agrega escuchas sirven para evitar el comportamiento por
+    //defecto de los navegadores que no suelen permitirlo.
     soltar.addEventListener('dragenter', function(e){
         e.preventDefault();
     });

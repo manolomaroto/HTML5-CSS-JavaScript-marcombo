@@ -1,0 +1,19 @@
+#cajaObjetivo{
+    float: left;
+    width: 500px;
+    height: 300px;
+    margin: 10px;
+    border: 1px solid #999;
+}
+
+#cajaImagen{
+    float: left;
+    width: 320px;
+    margin: 10px;
+    border: 1px solid #999;
+}
+
+#cajaImagen > img{
+    float: left;
+    padding: 5px;
+}
